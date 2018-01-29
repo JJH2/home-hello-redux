@@ -5,8 +5,3 @@ export function addListItem(text) {
         text
     }
 }
-
-
-export function removeListItem() {
-
-}
