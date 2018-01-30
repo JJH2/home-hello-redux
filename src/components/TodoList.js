@@ -3,11 +3,12 @@ import { connect } from 'react-redux';
 
 class TodoList extends Component {
     render() {
+        const list = this.props.todos;
         return (
-            <div>
-                {this.props.todos}
-            </div>
-        );
+            list.map(item => {
+                return <div>{item}</div>
+            })
+        )
     }
 }
 
